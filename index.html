@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotasDev</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="w-full flex justify-center items-center h-screen p-5 bg-slate-700">
+        <main
+            class="shadow-lg flex md:w-6/12  justify-center flex-col gap-10 items-center bg-slate-800 rounded-md p-10">
+            <h1 class="text-6xl text-white">Notas <span class="text-cyan-500">{Dev}</span></h1>
+            <form class="flex flex-col gap-2 w-full md:w-3/4" id="formulario-login">
+                <div>
+                    <label class="text-cyan-500 mb-1 block text-xl" for="usuario">Usuario</label>
+                    <input class="outline-none w-full py-1 px-2 rounded-md" type="text" name="usuario" id="usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="text-xl mb-1 text-cyan-500 block ">Password</label>
+                    <input class="outline-none w-full py-1 px-2 rounded-md" type="password" name="password" id="password">
+                </div>
+                <button type="submit"
+                    class="p-2 text-white bg-cyan-500 rounded-md opacity-50" disabled>Iniciar
+                    Sesión</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/usuarios.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

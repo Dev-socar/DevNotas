@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotasDev</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <nav class="bg-slate-800 flex justify-between py-3 px-5 items-center">
+        <h1 class="text-white text-4xl">BlocDev</h1>
+        <div class="flex gap-2 items-center">
+            <p class="text-white text-xl ">Hola <span id="usuario"></span></p>
+            <button type="submit"
+                class="hover:bg-slate-200 hover:text-cyan-500 transition-all ease-in p-1 text-white bg-cyan-500 rounded-md cerrar-sesion">Cerrar
+                Sesión</button>
+        </div>
+    </nav>
+
+    <main class="m-10">
+        <form class="w-full" id="formulario-nota">
+            <div class="mb-8 flex flex-col gap-1 justify-between">
+                <label for="titulo" class="block text-xl text-gray-900">Título de la nota</label>
+                <input type="titulo" id="titulo" class="flex-1 p-2.5 bg-slate-100 rounded-md outline-none"
+                    placeholder="Diálogo vídeo" />
+            </div>
+            <div class="mb-5 flex flex-col gap-1 justify-between">
+                <label for="nota" class="block text-xl text-gray-900">Escribe tu nota</label>
+                <textarea id="nota" rows="4" class="p-2.5 bg-slate-100 rounded-md outline-none resize-none"
+                    placeholder="Escribe tu nota...." ></textarea>
+            </div>
+            <button type="submit" class="text-white bg-cyan-500 rounded-md px-5 py-2.5 text-center"
+                id="guardar-nota">Guardar Nota</button>
+        </form>
+
+        <div class="w-full mt-10">
+            <h2 class="text-3xl text-center">Tus Notas</h2>
+            <div class="p-5 md:grid md:grid-cols-3 md:gap-2" id="notas"></div>
+        </div>
+    </main>
+    <script src="js/perfil.js"></script>
+
+</body>
+
+</html>
